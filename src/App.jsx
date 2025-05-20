@@ -31,12 +31,8 @@ function App() {
   return (
     <>
       <div id='base'>
-        <Tableau/>
+        <Tableau page={page}/>
         {page === 0 ?(<Step1 PageNext={PageNext} PagePrev={PagePrev}/>) : page === 1  ? (<Step2 PageNext={PageNext} PagePrev={PagePrev}/>) : page === 2 ?(<Step3 PageNext={PageNext} PagePrev={PagePrev}/>) : page === 3 ? (<Step4 PageNext={PageNext} PagePrev={PagePrev} Back={Back}/>) : page === 4 && (<Step5 PagePrev={PagePrev}/>) }
-        
-        
-        
-
       </div>
     </>
   )

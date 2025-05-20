@@ -43,7 +43,19 @@
     margin-left: -42px;
 }
 
-#pnumber{
+.pnumber{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    font-weight: 600;   
+    width: 47px;
+}
+.pnumberOn{
     border: 1px solid white;
     border-radius: 50%;
     width: 40px;
@@ -53,8 +65,10 @@
     padding-bottom: 6px;
     color: white;
     font-weight: 600;
-    
+    background-color: rgb(182, 220, 250);
+    width: 47px;
 }
+
 
 #step1bis p{
     margin-bottom: 3px;
