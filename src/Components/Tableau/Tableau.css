@@ -5,4 +5,65 @@
     display: flex;
     margin-left: 20px;
     border-radius: 15px;
+    flex-direction: column;
+}
+#container{
+    margin-top: 20%;
+}
+
+#stepp1{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10%;
+    width: 200px;
+    margin-left: 0px;
+}
+
+#stepp2{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10%;
+    margin-left: -15px;
+}
+#stepp3{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10%;
+    margin-left: -50px;
+}
+#stepp4{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10%;
+    margin-left: -42px;
+}
+
+#pnumber{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+#step1bis p{
+    margin-bottom: 3px;
+}
+#step1p1{
+    color: white;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+#step1p2{
+    color: white;
+    font-weight: 600;
 }
