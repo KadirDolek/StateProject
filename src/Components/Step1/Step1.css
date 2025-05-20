@@ -1,0 +1,39 @@
+#step1before{
+    height: 60vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#step1 h2{
+    font-size: 45px;
+    margin-bottom: 0;
+    color: rgb(3, 33, 79);
+}
+#h2p{
+    font-size: 17.5px;
+    opacity: 50%;
+    margin-bottom: 10%;
+}
+#infoname,#infomail,#infonumber{
+    color: rgb(35, 59, 85);
+    font-weight: 800;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgba(163, 155, 155, 0.404);
+    margin-bottom: 5%;
+}
+#divbtn{
+    display: flex;
+    justify-content: end;
+    margin-top: 15%;
+}
+#btn1{
+    border-radius: 10px;
+    padding: 7.5px 20px 7.5px 20px;
+    background-color: rgb(13, 38, 71);
+    color: white;
+    font-weight: 600;
+}

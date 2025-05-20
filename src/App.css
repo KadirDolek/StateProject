@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(238, 244, 254);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#base{
+  height: 70vh;
+  min-width: 400px;
+  width: 50vw;
+  background-color: rgb(254, 254, 254);
+  margin-top: 12.5%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

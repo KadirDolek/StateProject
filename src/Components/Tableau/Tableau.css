@@ -1,0 +1,8 @@
+#tableau{
+    background-image: url('../../assets/Img/sidebar.svg');
+    height: 62vh;
+    width: 250px;
+    display: flex;
+    margin-left: 20px;
+    border-radius: 15px;
+}
