@@ -1,0 +1,53 @@
+#paymentPlan {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+#step2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 7.5%;
+}
+
+#h2step2 {
+    font-size: 45px;
+    margin-bottom: 0;
+    color: rgb(3, 33, 79);
+}
+
+#h2p1 {
+    font-size: 17.5px;
+    opacity: 50%;
+    margin-bottom: 10%;
+}
+
+#borderPayment {
+    border: solid 2px rgba(177, 172, 172, 0.322);
+    height: 155px;
+    width: 140px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#imgstep2 {
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+#monthyeardiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#pro,#advanced,#arcade{
+
+    color: rgb(49, 84, 142);
+    font-weight: bolder;
+    font-size: 17px;
+
+}
