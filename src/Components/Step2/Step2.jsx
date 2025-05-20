@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Step2.css';
 
-export default function Step2() {
+export default function Step2({PageNext, PagePrev}) {
     const [isYearly, setIsYearly] = useState(false);
 
     return(
@@ -42,8 +42,8 @@ export default function Step2() {
                 <span style={{fontWeight: isYearly ? 'bold' : 'normal'}}>Yearly</span>
             </div>
             <div id='lesboutons'>
-                <button id='btnback'>Go back</button>
-                <button id='btnnext'>Next Step</button>
+                <button onClick={PagePrev} id='btnback'>Go back</button>
+                <button onClick={PageNext} id='btnnext'>Next Step</button>
             </div>
         </div>
     )

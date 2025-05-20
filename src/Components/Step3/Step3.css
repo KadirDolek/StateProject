@@ -1,0 +1,49 @@
+#bigdiv{
+    margin-left: 10%;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+}
+#divcheckbox{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 80px;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.144);
+    margin-bottom: 3%;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+
+#divphrase{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+#check{
+    height: 20px;
+    width: 70px;
+}
+
+#lesboutons2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+#lesboutons2 button{
+  background: transparent;
+}
+#btnback{
+  border: none;
+  font-weight: bolder;
+  color: rgb(88, 99, 112);
+}
+#btnnext{
+    border-radius: 10px;
+    padding: 7.5px 20px 7.5px 20px;
+    background-color: rgb(15, 45, 85) !important;
+    color: white;
+    font-weight: 600;
+    border: none;
+}

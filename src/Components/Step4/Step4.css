@@ -1,0 +1,35 @@
+#lesboutons3{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60%;
+}
+#lesboutons3 button{
+  background: transparent;
+}
+#btnback{
+  border: none;
+  font-weight: bolder;
+  color: rgb(88, 99, 112);
+}
+#btnnext{
+    border-radius: 10px;
+    padding: 7.5px 20px 7.5px 20px;
+    background-color: rgb(15, 45, 85) !important;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+#step4div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#totalprix{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #bordure1{
+    
+} */

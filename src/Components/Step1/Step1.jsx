@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Step1.css'
 
 
-export default function Step1(){
+export default function Step1({PageNext}){
 
     const [name, setName] = useState("")
     const [mail, setMail] = useState("")
@@ -24,7 +24,7 @@ export default function Step1(){
                     </form>
                 </div>
                 <div id='divbtn'>
-                    <button id='btn1'>Next Step</button>
+                    <button onClick={PageNext} id='btn1'>Next Step</button>
                 </div>
             </div>
 
