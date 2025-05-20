@@ -33,6 +33,10 @@
     box-sizing: border-box;
 }
 
+#borderPayment:hover {
+    border: solid 2px rgb(141, 81, 143);
+}
+
 #imgstep2 {
     margin-left: 10%;
     margin-top: 15%;
@@ -40,8 +44,13 @@
 
 #monthyeardiv{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 5%;
+    width: 450px;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(234, 240, 250);
+    margin-bottom: 30%;
 }
 
 #pro,#advanced,#arcade{
@@ -50,4 +59,73 @@
     font-weight: bolder;
     font-size: 17px;
 
+}
+
+#prix{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.733);
+}
+#lesboutons{
+  display: flex;
+  justify-content: space-between;
+}
+#lesboutons button{
+  background: transparent;
+}
+#btnback{
+  border: none;
+  font-weight: bolder;
+  color: rgb(88, 99, 112);
+}
+#btnnext{
+    border-radius: 10px;
+    padding: 7.5px 20px 7.5px 20px;
+    background-color: rgb(15, 45, 85) !important;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #6863b6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
 }

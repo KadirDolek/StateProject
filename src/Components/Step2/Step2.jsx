@@ -1,9 +1,8 @@
+import { useState } from 'react';
 import './Step2.css';
 
 export default function Step2() {
-
-
-
+    const [isYearly, setIsYearly] = useState(false);
 
     return(
         <div id='step2'>
@@ -14,32 +13,37 @@ export default function Step2() {
             <div id='paymentPlan'>
                 <div id='borderPayment'>
                     <div><img id='imgstep2' src="../src/assets/Img/arcade.svg" alt="" /></div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='arcade' style={{marginBottom:'0'}}>Arcade</p>
-                        <p style={{marginTop:'0'}}>$9/mo</p>
+                        <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$90/yr' : '$9/mo'}</p>
                     </div>
                 </div>
                 <div id='borderPayment'>
                     <div><img id='imgstep2' src="../src/assets/Img/advenced.svg" alt="" /></div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='advanced' style={{marginBottom:'0'}}>Advanced</p>
-                        <p style={{marginTop:'0'}}>$9/mo</p>
+                        <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$120/yr' : '$12/mo'}</p>
                     </div>
                 </div>
                 <div id='borderPayment'>
                     <div><img id='imgstep2' src="../src/assets/Img/pro.svg" alt="" /></div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='pro' style={{marginBottom:'0'}}>Pro</p>
-                        <p style={{marginTop:'0'}}>$9/mo</p>
+                        <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$150/yr' : '$15/mo'}</p>
                     </div>
                 </div>
             </div> 
             <div id='monthyeardiv'>
-                <p id='monthyear'>Monthly/Year</p>
+                <span style={{fontWeight: !isYearly ? 'bold' : 'normal'}}>Monthly</span>
+                <label className="switch">
+                    <input type="checkbox" checked={isYearly} onChange={() => setIsYearly(!isYearly)}/>
+                    <span className="slider"></span>
+                </label>
+                <span style={{fontWeight: isYearly ? 'bold' : 'normal'}}>Yearly</span>
             </div>
-            <div>
-                <button>Go back</button>
-                <button>Next Step</button>
+            <div id='lesboutons'>
+                <button id='btnback'>Go back</button>
+                <button id='btnnext'>Next Step</button>
             </div>
         </div>
     )
