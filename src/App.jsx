@@ -91,7 +91,7 @@ function App() {
         <Tableau page={page}/>
         {page === 0 ?(<Step1 PageNext={PageNext} PagePrev={PagePrev}/>) : 
         page === 1  ? (<Step2 PageNext={PageNext} PagePrev={PagePrev} forfaits={forfaits} selectedForfait={selectedForfait} setSelectedForfait={setSelectedForfait} isYearly={isYearly} setIsYearly={setIsYearly}/>) : 
-        page === 2 ?(<Step3 PageNext={PageNext} PagePrev={PagePrev}/>) : 
+        page === 2 ?(<Step3 PageNext={PageNext} PagePrev={PagePrev} addOns={addOns} selectedAddOns={selectedAddOns} setSelectedAddOns={setSelectedAddOns} isYearly={isYearly}/>) : 
         page === 3 ? (<Step4 PageNext={PageNext} PagePrev={PagePrev} Back={Back}/>) : 
         page === 4 && (<Step5 PagePrev={PagePrev}/>) }
       </div>
