@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './Step2.css';
 
-export default function Step2({PageNext, PagePrev}) {
-    const [isYearly, setIsYearly] = useState(false);
-
+export default function Step2({PageNext, PagePrev, forfaits, selectedForfait, setSelectedForfait, isYearly, setIsYearly}) {
     return(
         <div id='step2'>
             <div>
@@ -11,25 +8,49 @@ export default function Step2({PageNext, PagePrev}) {
                 <p id='h2p1'>You have the option of monthly or yearly billing</p>
             </div> 
             <div id='paymentPlan'>
-                <div id='borderPayment'>
+                <div 
+                    id='borderPayment'
+                    style={{
+                        border: selectedForfait === 0 ? '2px solid #473dff' : '1px solid #d6d9e6',
+                        backgroundColor: selectedForfait === 0 ? '#f8f9fe' : 'white'
+                    }}
+                    onClick={() => setSelectedForfait(0)}
+                >
                     <div><img id='imgstep2' src="../src/assets/Img/arcade.svg" alt="" /></div>
                     <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='arcade' style={{marginBottom:'0'}}>Arcade</p>
                         <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$90/yr' : '$9/mo'}</p>
+                        {isYearly && <p style={{color: '#473dff', fontSize: '14px', marginTop: '5px'}}></p>}
                     </div>
                 </div>
-                <div id='borderPayment'>
+                <div 
+                    id='borderPayment'
+                    style={{
+                        border: selectedForfait === 1 ? '2px solid #473dff' : '1px solid #d6d9e6',
+                        backgroundColor: selectedForfait === 1 ? '#f8f9fe' : 'white'
+                    }}
+                    onClick={() => setSelectedForfait(1)}
+                >
                     <div><img id='imgstep2' src="../src/assets/Img/advenced.svg" alt="" /></div>
                     <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='advanced' style={{marginBottom:'0'}}>Advanced</p>
                         <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$120/yr' : '$12/mo'}</p>
+                        {isYearly && <p style={{color: '#473dff', fontSize: '14px', marginTop: '5px'}}></p>}
                     </div>
                 </div>
-                <div id='borderPayment'>
+                <div 
+                    id='borderPayment'
+                    style={{
+                        border: selectedForfait === 2 ? '2px solid #473dff' : '1px solid #d6d9e6',
+                        backgroundColor: selectedForfait === 2 ? '#f8f9fe' : 'white'
+                    }}
+                    onClick={() => setSelectedForfait(2)}
+                >
                     <div><img id='imgstep2' src="../src/assets/Img/pro.svg" alt="" /></div>
                     <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='pro' style={{marginBottom:'0'}}>Pro</p>
                         <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$150/yr' : '$15/mo'}</p>
+                        {isYearly && <p style={{color: '#473dff', fontSize: '14px', marginTop: '5px'}}></p>}
                     </div>
                 </div>
             </div> 

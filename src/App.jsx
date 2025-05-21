@@ -30,6 +30,26 @@ function App() {
       period: "mo"
     }
   ]
+    const addOns = [
+    {
+      name: "Online Service",
+      description: "Access to multiplayer games",
+      price: 1,
+      yearlyPrice: 10
+    },
+    {
+      name: "Larger Storage",
+      description: "Extra 1TB of cloud save",
+      price: 2,
+      yearlyPrice: 20
+    },
+    {
+      name: "Customizable Profile",
+      description: "Custom theme on your profile",
+      price: 2,
+      yearlyPrice: 20
+    }
+  ]
 
 
   
@@ -38,6 +58,7 @@ function App() {
   const [isYearly, setIsYearly] = useState(false);
   const [selectedAddOns, setSelectedAddOns] = useState([false, false, false]);
 
+    
 
   function calculTotal() {
   let total = 0;
@@ -68,7 +89,11 @@ function App() {
     <>
       <div id='base'>
         <Tableau page={page}/>
-        {page === 0 ?(<Step1 PageNext={PageNext} PagePrev={PagePrev}/>) : page === 1  ? (<Step2 PageNext={PageNext} PagePrev={PagePrev}/>) : page === 2 ?(<Step3 PageNext={PageNext} PagePrev={PagePrev}/>) : page === 3 ? (<Step4 PageNext={PageNext} PagePrev={PagePrev} Back={Back}/>) : page === 4 && (<Step5 PagePrev={PagePrev}/>) }
+        {page === 0 ?(<Step1 PageNext={PageNext} PagePrev={PagePrev}/>) : 
+        page === 1  ? (<Step2 PageNext={PageNext} PagePrev={PagePrev} forfaits={forfaits} selectedForfait={selectedForfait} setSelectedForfait={setSelectedForfait} isYearly={isYearly} setIsYearly={setIsYearly}/>) : 
+        page === 2 ?(<Step3 PageNext={PageNext} PagePrev={PagePrev}/>) : 
+        page === 3 ? (<Step4 PageNext={PageNext} PagePrev={PagePrev} Back={Back}/>) : 
+        page === 4 && (<Step5 PagePrev={PagePrev}/>) }
       </div>
     </>
   )
