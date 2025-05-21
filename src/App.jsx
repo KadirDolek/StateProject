@@ -62,9 +62,9 @@ function App() {
 
   function calculTotal() {
   let total = 0;
-  // Ajout forfait
+  // Ajout forfait oklm
   total += isYearly ? forfaits[selectedForfait].yearlyPrice : forfaits[selectedForfait].price;
-  // Ajout prix adds
+  // Ajout des adds-on
   selectedAddOns.forEach((isSelected, index) => {
     if (isSelected) {
       total += isYearly ? addOns[index].yearlyPrice : addOns[index].price;

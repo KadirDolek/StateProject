@@ -1,6 +1,6 @@
 import './Step2.css';
 
-export default function Step2({PageNext, PagePrev, forfaits, selectedForfait, setSelectedForfait, isYearly, setIsYearly}) {
+export default function Step2({PageNext, PagePrev, selectedForfait, setSelectedForfait, isYearly, setIsYearly}) {
     return(
         <div id='step2'>
             <div>
@@ -11,7 +11,7 @@ export default function Step2({PageNext, PagePrev, forfaits, selectedForfait, se
                 <div 
                     id='borderPayment'
                     style={{
-                        border: selectedForfait === 0 ? '2px solid #473dff' : '1px solid #d6d9e6',
+                        border: selectedForfait === 0 ? '2px solid rgb(133, 81, 182)' : '1px solid #d6d9e6',
                         backgroundColor: selectedForfait === 0 ? '#f8f9fe' : 'white'
                     }}
                     onClick={() => setSelectedForfait(0)}
@@ -26,7 +26,7 @@ export default function Step2({PageNext, PagePrev, forfaits, selectedForfait, se
                 <div 
                     id='borderPayment'
                     style={{
-                        border: selectedForfait === 1 ? '2px solid #473dff' : '1px solid #d6d9e6',
+                        border: selectedForfait === 1 ? '2px solid rgb(133, 81, 182)' : '1px solid #d6d9e6',
                         backgroundColor: selectedForfait === 1 ? '#f8f9fe' : 'white'
                     }}
                     onClick={() => setSelectedForfait(1)}
@@ -41,7 +41,7 @@ export default function Step2({PageNext, PagePrev, forfaits, selectedForfait, se
                 <div 
                     id='borderPayment'
                     style={{
-                        border: selectedForfait === 2 ? '2px solid #473dff' : '1px solid #d6d9e6',
+                        border: selectedForfait === 2 ? '2px solid rgb(133, 81, 182)' : '1px solid #d6d9e6',
                         backgroundColor: selectedForfait === 2 ? '#f8f9fe' : 'white'
                     }}
                     onClick={() => setSelectedForfait(2)}

@@ -16,11 +16,11 @@ export default function Step1({PageNext}){
                     <p id='h2p'>Please provide your name, e-mail adress and phone number</p>
                     <form>
                         <p id='infoname'>Your name is : {name} </p>
-                        <input value={name} onChange={(e) => setName(e.target.value)} type="text" />
+                        <input value={name} onChange={(e) => setName(e.target.value)} type="text" required/>
                         <p id='infomail'>Your email is : {mail}</p>
-                        <input value={mail} onChange={(e) => setMail(e.target.value)} type="mail" />
+                        <input value={mail} onChange={(e) => setMail(e.target.value)} type="mail" required/>
                         <p id='infonumber'>Your phone number is : {number}</p>
-                        <input value={number} onChange={(e) => setNumber(e.target.value)} type="number" />
+                        <input value={number} onChange={(e) => setNumber(e.target.value)} type="number" required/>
                     </form>
                 </div>
                 <div id='divbtn'>
