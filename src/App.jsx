@@ -100,7 +100,7 @@ function App() {
 
   return (
     <>
-    {/* Bonus 1  */}
+    {/* Bonus 1  */} 
       <button style={{border:'none', backgroundColor:'crimson', borderRadius:'20px', display:'flex', marginLeft:'auto',marginRight:'auto', color:'wheat', fontWeight:'bold', fontSize:'30px', width:'70px', justifyContent:'center'}} onClick={() => document.body.classList.toggle('dark-mode')}>
         &#9790; 
       </button>
