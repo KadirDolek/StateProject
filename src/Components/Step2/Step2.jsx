@@ -1,4 +1,7 @@
 import './Step2.css';
+import Arcade from '../../assets/Img/arcade.svg'
+import Advance from '../../assets/Img/advenced.svg'
+import Pro from '../../assets/Img/pro.svg'
 
 export default function Step2({PageNext, PagePrev, selectedForfait, setSelectedForfait, isYearly, setIsYearly}) {
     return(
@@ -16,7 +19,7 @@ export default function Step2({PageNext, PagePrev, selectedForfait, setSelectedF
                     }}
                     onClick={() => setSelectedForfait(0)}
                 >
-                    <div><img id='imgstep2' src="../src/assets/Img/arcade.svg" alt="" /></div>
+                    <div><img id='imgstep2' src={Arcade} alt="" /></div>
                     <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='arcade' style={{marginBottom:'0'}}>Arcade</p>
                         <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$90/yr' : '$9/mo'}</p>
@@ -31,7 +34,7 @@ export default function Step2({PageNext, PagePrev, selectedForfait, setSelectedF
                     }}
                     onClick={() => setSelectedForfait(1)}
                 >
-                    <div><img id='imgstep2' src="../src/assets/Img/advenced.svg" alt="" /></div>
+                    <div><img id='imgstep2' src={Advance} alt="" /></div>
                     <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='advanced' style={{marginBottom:'0'}}>Advanced</p>
                         <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$120/yr' : '$12/mo'}</p>
@@ -46,7 +49,7 @@ export default function Step2({PageNext, PagePrev, selectedForfait, setSelectedF
                     }}
                     onClick={() => setSelectedForfait(2)}
                 >
-                    <div><img id='imgstep2' src="../src/assets/Img/pro.svg" alt="" /></div>
+                    <div><img id='imgstep2' src={Pro} alt="" /></div>
                     <div style={{marginTop:'35%', marginLeft:'10%', lineHeight:'1'}}>
                         <p id='pro' style={{marginBottom:'0'}}>Pro</p>
                         <p id='prix' style={{marginTop:'0'}}>{isYearly ? '$150/yr' : '$15/mo'}</p>

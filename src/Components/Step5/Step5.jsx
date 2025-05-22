@@ -1,5 +1,5 @@
 import './Step5.css'
-
+import Thankyou from '/src/assets/Img/thankyou.svg' 
 
 
 export default function Step5(){
@@ -10,7 +10,7 @@ export default function Step5(){
 
         <div id='lastdiv'>
             <div>
-                <img src="./src/assets/Img/thankyou.svg" alt="" />
+                <img src={Thankyou} alt="" />
             </div>
             <div style={{textAlign:'center', paddingLeft:'12.5%', paddingRight:'12.5%'}}>
                 <h1>Thank you!</h1>

@@ -1,10 +1,11 @@
 import './Tableau.css';
 
+
 export default function Tableau({ page }) {
   return (
     <div id="tableau">
       <div id="container">
-        <div style={{marginLeft:'-4px'}} id="stepp1">
+        <div style={{marginLeft:'-44px'}} id="stepp1">
           <div className={page === 0 ? "pnumberOn" : "pnumber"}>1</div>
           <div id="step1bis">
             <p id="step1p1">STEP 1</p>
