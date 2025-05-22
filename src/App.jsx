@@ -84,14 +84,28 @@ function App() {
    function Back(){
     setPage(1)
   }
+  // Bonus 4
+  function Page1 (){
+    setPage(0)
+  }
+  function Page2 (){
+    setPage(1)
+  }
+  function Page3 (){
+    setPage(2)
+  }
+  function Page4 (){
+    setPage(3)
+  }
 
   return (
     <>
+    {/* Bonus 1  */}
       <button style={{border:'none', backgroundColor:'crimson', borderRadius:'20px', display:'flex', justifySelf:'center', color:'wheat', fontWeight:'bold', fontSize:'30px', width:'70px', justifyContent:'center'}} onClick={() => document.body.classList.toggle('dark-mode')}>
         &#9790; 
       </button>
       <div id='base' className='base2'>
-        <Tableau page={page}/>
+        <Tableau page={page} Page1={Page1} Page2={Page2} Page3={Page3} Page4={Page4}/>
         {page === 0 ?(<Step1 PageNext={PageNext} PagePrev={PagePrev}/>) : 
         page === 1  ? (<Step2 PageNext={PageNext} PagePrev={PagePrev} forfaits={forfaits} selectedForfait={selectedForfait} setSelectedForfait={setSelectedForfait} isYearly={isYearly} setIsYearly={setIsYearly}/>) : 
         page === 2 ?(<Step3 PageNext={PageNext} PagePrev={PagePrev} addOns={addOns} selectedAddOns={selectedAddOns} setSelectedAddOns={setSelectedAddOns} isYearly={isYearly}/>) : 
