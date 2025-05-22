@@ -21,6 +21,9 @@ body.dark-mode{
   display: flex;
   justify-content: flex-start;
 }
+body.dark-mode #base{
+  background-color: rgb(136, 134, 134);
+}
 
 
 
