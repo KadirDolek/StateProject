@@ -129,3 +129,57 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(20px);
 }
+
+
+@media (max-width: 1110px) {
+  #h2step2 {
+    font-size: 35px;
+    margin-bottom: 0;
+    color: rgb(3, 33, 79);
+    margin-left: auto;
+    margin-right: auto;
+}
+#monthyeardiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(234, 240, 250);
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#step2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.5%;
+    margin-left: -5%;
+    justify-content: center;
+}
+#paymentPlan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#lesboutons{
+  display: flex;
+  justify-content:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+#h2p1 {
+    font-size: 14.5px;
+    opacity: 50%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}

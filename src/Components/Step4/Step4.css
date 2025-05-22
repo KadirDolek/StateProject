@@ -1,7 +1,7 @@
 #lesboutons3{
   display: flex;
   justify-content: space-between;
-  margin-top: 60%;
+  margin-top: 45%;
 }
 #lesboutons3 button{
   background: transparent;
@@ -30,6 +30,24 @@
     justify-content: space-between;
 }
 
-/* #bordure1{
-    
-} */
+@media (max-width: 1110px) {
+  #lesboutons3{
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+#step4div{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+#totalprix{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+#ptitdiv{
+  margin-right: auto;
+}
+}

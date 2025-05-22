@@ -17,7 +17,6 @@
     justify-content: center;
     gap: 10%;
     margin-bottom: 10%;
-    width: 200px;
     margin-left: 0px;
 }
 
@@ -81,4 +80,107 @@
 #step1p2{
     color: white;
     font-weight: 600;
+}
+
+@media (max-width: 1110px){
+#stepp1{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10%;
+}
+#step1p1{
+    color: white;
+    font-size: 10px;
+    font-weight: 300;
+    display: none;
+}
+#step1p2{
+    color: white;
+    font-weight: 600;
+    display: none;
+}
+
+}
+
+@media (max-width: 1110px){
+    #tableau{
+    background-image: url('../../assets/Img/sidebar.svg');
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    margin-left: 25px;
+    border-radius: 15px;
+    flex-direction: column;
+    margin-top: 0%;
+    background-position: 44% -53%;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+#stepp1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#stepp2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#stepp3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#stepp4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#container{
+    margin-top: 4%;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    text-align: center;
+}
+.pnumber{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    font-weight: 600;   
+    width: 43px;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+.pnumberOn{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(182, 220, 250);
+    width: 43px;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+    
 }
