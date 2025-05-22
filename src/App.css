@@ -6,6 +6,12 @@ body{
   margin: 0;
 }
 
+body.dark-mode{
+  background-color: #181a1b;
+  color: #f1f1f1;
+}
+
+
 #base{
   height: 70vh;
   min-width: 400px;
@@ -18,12 +24,11 @@ body{
 }
 
 
+
 @media (max-width: 1200px) {
   #base{
     text-align: center;
   }
-
-
 }
 
 @media (max-width: 1110px) {

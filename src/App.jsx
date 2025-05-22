@@ -87,7 +87,10 @@ function App() {
 
   return (
     <>
-      <div id='base'>
+      <button style={{border:'none', backgroundColor:'crimson', borderRadius:'20px', display:'flex', justifySelf:'center', color:'wheat', fontWeight:'bold', fontSize:'30px', width:'70px', justifyContent:'center'}} onClick={() => document.body.classList.toggle('dark-mode')}>
+        &#9790; 
+      </button>
+      <div id='base' className='base2'>
         <Tableau page={page}/>
         {page === 0 ?(<Step1 PageNext={PageNext} PagePrev={PagePrev}/>) : 
         page === 1  ? (<Step2 PageNext={PageNext} PagePrev={PagePrev} forfaits={forfaits} selectedForfait={selectedForfait} setSelectedForfait={setSelectedForfait} isYearly={isYearly} setIsYearly={setIsYearly}/>) : 
